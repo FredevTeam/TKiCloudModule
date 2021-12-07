@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E31A1D1F2D9A754CE8F4F9C /* Pods_TKiCloudModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97141C2CC680249D1657E2E /* Pods_TKiCloudModule_Example.framework */; };
+		9B05B1EF2757AA8D001B6D49 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B05B1EE2757AA8D001B6D49 /* CloudKit.framework */; };
+		9B8EA20327564FF90082A5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EA20227564FF90082A5C1 /* AppDelegate.swift */; };
+		9B8EA20A27564FF90082A5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8EA20827564FF90082A5C1 /* Main.storyboard */; };
+		9B8EA20C27564FFB0082A5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B8EA20B27564FFB0082A5C1 /* Assets.xcassets */; };
+		9B8EA20F27564FFB0082A5C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8EA20D27564FFB0082A5C1 /* LaunchScreen.storyboard */; };
+		9BD86CC0275B39E800B34596 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD86CBF275B39E800B34596 /* CloudKit.framework */; };
+		9BDA3F72275B23B70098E7BE /* KeyValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA3F71275B23B70098E7BE /* KeyValueViewController.swift */; };
+		9BDA3F7C275B2ADC0098E7BE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA3F76275B2ADC0098E7BE /* TableViewCell.swift */; };
+		9BDA3F80275B2AEF0098E7BE /* KeyValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDA3F7F275B2AEF0098E7BE /* KeyValueViewController.swift */; };
+		A07069F0F8459C66E37A0BCC /* Pods_TKiCloudModule_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69603CA00CB1F3EC6E9BEFCF /* Pods_TKiCloudModule_iOS.framework */; };
+		ED83F67C20348A760038D96B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83F67B20348A760038D96B /* AppDelegate.swift */; };
+		ED83F68020348A760038D96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED83F67F20348A760038D96B /* Assets.xcassets */; };
+		ED83F68320348A760038D96B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED83F68120348A760038D96B /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B6C247F6C0D73C199FCD2B5 /* Pods-TKiCloudModule-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKiCloudModule-iOS.debug.xcconfig"; path = "Target Support Files/Pods-TKiCloudModule-iOS/Pods-TKiCloudModule-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		39A32F19C47755680D2B79F9 /* Pods-TKiCloudModule-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKiCloudModule-iOS.release.xcconfig"; path = "Target Support Files/Pods-TKiCloudModule-iOS/Pods-TKiCloudModule-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		69603CA00CB1F3EC6E9BEFCF /* Pods_TKiCloudModule_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKiCloudModule_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		755C624E1A0D0C0E9A059FFF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9B05B1EE2757AA8D001B6D49 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		9B8EA20027564FF90082A5C1 /* TKiCloudModule-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TKiCloudModule-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B8EA20227564FF90082A5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B8EA20927564FF90082A5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B8EA20B27564FFB0082A5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B8EA20E27564FFB0082A5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B8EA21027564FFB0082A5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD86CBF275B39E800B34596 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		9BDA3F5F275914B70098E7BE /* TKiCloudModule-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TKiCloudModule-iOS.entitlements"; sourceTree = "<group>"; };
+		9BDA3F71275B23B70098E7BE /* KeyValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueViewController.swift; sourceTree = "<group>"; };
+		9BDA3F76275B2ADC0098E7BE /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9BDA3F7F275B2AEF0098E7BE /* KeyValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueViewController.swift; sourceTree = "<group>"; };
+		B30170AFAAAD88EE30D5E06F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BB56D5C2C03867467C1774C9 /* TKiCloudModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TKiCloudModule.podspec; path = ../TKiCloudModule.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D84C8A3B2B61561755B79013 /* Pods-TKiCloudModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKiCloudModule_Example.release.xcconfig"; path = "Target Support Files/Pods-TKiCloudModule_Example/Pods-TKiCloudModule_Example.release.xcconfig"; sourceTree = "<group>"; };
+		ED83F67820348A760038D96B /* TKiCloudModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKiCloudModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED83F67B20348A760038D96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED83F67F20348A760038D96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED83F68220348A760038D96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED83F68420348A760038D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED83F68520348A760038D96B /* TKiCloudModule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TKiCloudModule.entitlements; sourceTree = "<group>"; };
+		EF49E6913E2C175CDD34DCFE /* Pods-TKiCloudModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKiCloudModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-TKiCloudModule_Example/Pods-TKiCloudModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F97141C2CC680249D1657E2E /* Pods_TKiCloudModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TKiCloudModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B8EA1FD27564FF90082A5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07069F0F8459C66E37A0BCC /* Pods_TKiCloudModule_iOS.framework in Frameworks */,
+				9BD86CC0275B39E800B34596 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED83F67520348A760038D96B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E31A1D1F2D9A754CE8F4F9C /* Pods_TKiCloudModule_Example.framework in Frameworks */,
+				9B05B1EF2757AA8D001B6D49 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71D8C0B6859372C48C153172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BD86CBF275B39E800B34596 /* CloudKit.framework */,
+				9B05B1EE2757AA8D001B6D49 /* CloudKit.framework */,
+				F97141C2CC680249D1657E2E /* Pods_TKiCloudModule_Example.framework */,
+				69603CA00CB1F3EC6E9BEFCF /* Pods_TKiCloudModule_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B8EA20127564FF90082A5C1 /* TKiCloudModule-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA3F65275B23A10098E7BE /* classes */,
+				9BDA3F5F275914B70098E7BE /* TKiCloudModule-iOS.entitlements */,
+				9B8EA20227564FF90082A5C1 /* AppDelegate.swift */,
+				9B8EA20827564FF90082A5C1 /* Main.storyboard */,
+				9B8EA20B27564FFB0082A5C1 /* Assets.xcassets */,
+				9B8EA20D27564FFB0082A5C1 /* LaunchScreen.storyboard */,
+				9B8EA21027564FFB0082A5C1 /* Info.plist */,
+			);
+			path = "TKiCloudModule-iOS";
+			sourceTree = "<group>";
+		};
+		9BDA3F65275B23A10098E7BE /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA3F66275B23A10098E7BE /* keyValue */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		9BDA3F66275B23A10098E7BE /* keyValue */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA3F71275B23B70098E7BE /* KeyValueViewController.swift */,
+			);
+			path = keyValue;
+			sourceTree = "<group>";
+		};
+		9BDA3F75275B2ADC0098E7BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA3F76275B2ADC0098E7BE /* TableViewCell.swift */,
+				9BDA3F77275B2ADC0098E7BE /* KeyValue */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9BDA3F77275B2ADC0098E7BE /* KeyValue */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA3F7F275B2AEF0098E7BE /* KeyValueViewController.swift */,
+			);
+			path = KeyValue;
+			sourceTree = "<group>";
+		};
+		CD773ED6E02826C58EF38B19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF49E6913E2C175CDD34DCFE /* Pods-TKiCloudModule_Example.debug.xcconfig */,
+				D84C8A3B2B61561755B79013 /* Pods-TKiCloudModule_Example.release.xcconfig */,
+				2B6C247F6C0D73C199FCD2B5 /* Pods-TKiCloudModule-iOS.debug.xcconfig */,
+				39A32F19C47755680D2B79F9 /* Pods-TKiCloudModule-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED83F66F20348A760038D96B = {
+			isa = PBXGroup;
+			children = (
+				ED83F69A20348B650038D96B /* Podspec Metadata */,
+				ED83F67A20348A760038D96B /* TKiCloudModule */,
+				9B8EA20127564FF90082A5C1 /* TKiCloudModule-iOS */,
+				ED83F67920348A760038D96B /* Products */,
+				CD773ED6E02826C58EF38B19 /* Pods */,
+				71D8C0B6859372C48C153172 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED83F67920348A760038D96B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED83F67820348A760038D96B /* TKiCloudModule_Example.app */,
+				9B8EA20027564FF90082A5C1 /* TKiCloudModule-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED83F67A20348A760038D96B /* TKiCloudModule */ = {
+			isa = PBXGroup;
+			children = (
+				9BDA3F75275B2ADC0098E7BE /* Classes */,
+				ED83F67B20348A760038D96B /* AppDelegate.swift */,
+				ED83F67F20348A760038D96B /* Assets.xcassets */,
+				ED83F68120348A760038D96B /* Main.storyboard */,
+				ED83F68420348A760038D96B /* Info.plist */,
+				ED83F68520348A760038D96B /* TKiCloudModule.entitlements */,
+			);
+			path = TKiCloudModule;
+			sourceTree = "<group>";
+		};
+		ED83F69A20348B650038D96B /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				BB56D5C2C03867467C1774C9 /* TKiCloudModule.podspec */,
+				B30170AFAAAD88EE30D5E06F /* README.md */,
+				755C624E1A0D0C0E9A059FFF /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B8EA1FF27564FF90082A5C1 /* TKiCloudModule-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B8EA21327564FFB0082A5C1 /* Build configuration list for PBXNativeTarget "TKiCloudModule-iOS" */;
+			buildPhases = (
+				01A0043A1EBE0B0AB5C4423C /* [CP] Check Pods Manifest.lock */,
+				9B8EA1FC27564FF90082A5C1 /* Sources */,
+				9B8EA1FD27564FF90082A5C1 /* Frameworks */,
+				9B8EA1FE27564FF90082A5C1 /* Resources */,
+				72AD440C035C907EA63D9CE9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TKiCloudModule-iOS";
+			productName = "TKiCloudModule-iOS";
+			productReference = 9B8EA20027564FF90082A5C1 /* TKiCloudModule-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED83F67720348A760038D96B /* TKiCloudModule_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED83F69320348A760038D96B /* Build configuration list for PBXNativeTarget "TKiCloudModule_Example" */;
+			buildPhases = (
+				EFEA8E07D5C3196EA0E045D3 /* [CP] Check Pods Manifest.lock */,
+				ED83F67420348A760038D96B /* Sources */,
+				ED83F67520348A760038D96B /* Frameworks */,
+				ED83F67620348A760038D96B /* Resources */,
+				3794E30C1A355E8A1039434A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKiCloudModule_Example;
+			productName = TKiCloudModule;
+			productReference = ED83F67820348A760038D96B /* TKiCloudModule_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED83F67020348A760038D96B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					9B8EA1FF27564FF90082A5C1 = {
+						CreatedOnToolsVersion = 13.1;
+						ProvisioningStyle = Automatic;
+					};
+					ED83F67720348A760038D96B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ED83F67320348A760038D96B /* Build configuration list for PBXProject "TKiCloudModule" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED83F66F20348A760038D96B;
+			productRefGroup = ED83F67920348A760038D96B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED83F67720348A760038D96B /* TKiCloudModule_Example */,
+				9B8EA1FF27564FF90082A5C1 /* TKiCloudModule-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B8EA1FE27564FF90082A5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B8EA20F27564FFB0082A5C1 /* LaunchScreen.storyboard in Resources */,
+				9B8EA20C27564FFB0082A5C1 /* Assets.xcassets in Resources */,
+				9B8EA20A27564FF90082A5C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED83F67620348A760038D96B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED83F68020348A760038D96B /* Assets.xcassets in Resources */,
+				ED83F68320348A760038D96B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A0043A1EBE0B0AB5C4423C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TKiCloudModule-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3794E30C1A355E8A1039434A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKiCloudModule_Example/Pods-TKiCloudModule_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit-macOS/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TKiCloudModule-macOS/TKiCloudModule.framework",
+				"${BUILT_PRODUCTS_DIR}/PLExtensionsModule/PLExtensionsModule.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKiCloudModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PLExtensionsModule.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKiCloudModule_Example/Pods-TKiCloudModule_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72AD440C035C907EA63D9CE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TKiCloudModule-iOS/Pods-TKiCloudModule-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit-iOS/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TKiCloudModule-iOS/TKiCloudModule.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKiCloudModule.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TKiCloudModule-iOS/Pods-TKiCloudModule-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFEA8E07D5C3196EA0E045D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TKiCloudModule_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B8EA1FC27564FF90082A5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B8EA20327564FF90082A5C1 /* AppDelegate.swift in Sources */,
+				9BDA3F72275B23B70098E7BE /* KeyValueViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED83F67420348A760038D96B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED83F67C20348A760038D96B /* AppDelegate.swift in Sources */,
+				9BDA3F80275B2AEF0098E7BE /* KeyValueViewController.swift in Sources */,
+				9BDA3F7C275B2ADC0098E7BE /* TableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B8EA20827564FF90082A5C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B8EA20927564FF90082A5C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B8EA20D27564FFB0082A5C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B8EA20E27564FFB0082A5C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ED83F68120348A760038D96B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED83F68220348A760038D96B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B8EA21127564FFB0082A5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6C247F6C0D73C199FCD2B5 /* Pods-TKiCloudModule-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "TKiCloudModule-iOS/TKiCloudModule-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TKiCloudModule-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.TKiCloudModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B8EA21227564FFB0082A5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A32F19C47755680D2B79F9 /* Pods-TKiCloudModule-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = "TKiCloudModule-iOS/TKiCloudModule-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TKiCloudModule-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.TKiCloudModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED83F69120348A760038D96B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED83F69220348A760038D96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		ED83F69420348A760038D96B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF49E6913E2C175CDD34DCFE /* Pods-TKiCloudModule_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TKiCloudModule/TKiCloudModule.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TKiCloudModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.TKiCloudModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		ED83F69520348A760038D96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D84C8A3B2B61561755B79013 /* Pods-TKiCloudModule_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TKiCloudModule/TKiCloudModule.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = TKiCloudModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.TKiCloudModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B8EA21327564FFB0082A5C1 /* Build configuration list for PBXNativeTarget "TKiCloudModule-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B8EA21127564FFB0082A5C1 /* Debug */,
+				9B8EA21227564FFB0082A5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED83F67320348A760038D96B /* Build configuration list for PBXProject "TKiCloudModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED83F69120348A760038D96B /* Debug */,
+				ED83F69220348A760038D96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED83F69320348A760038D96B /* Build configuration list for PBXNativeTarget "TKiCloudModule_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED83F69420348A760038D96B /* Debug */,
+				ED83F69520348A760038D96B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED83F67020348A760038D96B /* Project object */;
+}

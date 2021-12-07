@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TKiCloudModule-iOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'TKiCloudModule', :path => '../'
+  pod 'SnapKit'
+  # Pods for TKiCloudModule-iOS
+
+end
+
+target 'TKiCloudModule_Example' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'TKiCloudModule', :path => '../'
+  pod 'SnapKit'
+  # Pods for TKiCloudModule_Example
+  pod 'PLExtensionsModule', :path => '/Users/gouzi/Tao/Project/普拉多/Pods/PLExtensionsModule'
+end
+

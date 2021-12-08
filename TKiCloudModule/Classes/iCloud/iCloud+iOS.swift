@@ -497,7 +497,7 @@ extension iCloud {
                     }else {
                         // TODO: local 存在同名文件，但是文件内容不相同
                         self.delegate?.cloud(self, conflictBetween: cloudUrl.path, localFile: localUrl.path)
-                        completion(nil, iCloudError.conflict(lp: cloudUrl.path, rp: localUrl.path))
+                        completion(nil, iCloudError.conflict(lft: cloudUrl.path, rft: localUrl.path))
                         return
                     }
                     break

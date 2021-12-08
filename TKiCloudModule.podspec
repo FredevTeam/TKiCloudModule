@@ -38,4 +38,9 @@ TODO: Add long description of the pod here.
   s.subspec 'KeyValue' do |kv|
     kv.source_files = 'TKiCloudModule/Classes/KeyValue/**/*'
   end
+  
+  s.subspec 'iCloud' do |c|
+     c.source_files = 'TKiCloudModule/Classes/iCloud/**/*'
+  end
+  
 end
